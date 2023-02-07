@@ -62,6 +62,8 @@ const slidesContainerEl = document.querySelector(".items");
 const buttonNextEl = document.querySelector(".next");
 const buttonPrevEl = document.querySelector(".prev");
 
+
+
 let activeImage = 0;
 
 for (let i = 0; i < images.length; i++) {
@@ -84,7 +86,6 @@ for (let i = 0; i < images.length; i++) {
 
     slidesContainerEl.innerHTML += slide;
 }
-
 
 
 buttonPrevEl.addEventListener(
@@ -132,5 +133,86 @@ buttonNextEl.addEventListener(
 
         // alla slide con indice activeImage aggiungo la classe active
         slides[activeImage].classList.add("active");
+    }
+)
+
+//genero immagini list
+const mini_1 = document.getElementById("img_01");
+const mini_2 = document.getElementById("img_02");
+const mini_3 = document.getElementById("img_03");
+const mini_4 = document.getElementById("img_04");
+const mini_5 = document.getElementById("img_05");
+
+mini_1.addEventListener(
+    "click",
+    function () {
+        // recupero tutte le slides (come oggetti)
+        const slides = document.querySelectorAll(".item");
+
+        // dalla slide con indice activeImage rimuovo la classe active
+        slides[activeImage].classList.remove("active");
+
+        // alla slide con indice activeImage aggiungo la classe active
+        slides[0].classList.add("active");
+    }
+)
+
+
+mini_2.addEventListener(
+    "click",
+    function () {
+        // recupero tutte le slides (come oggetti)
+        const slides = document.querySelectorAll(".item");
+
+        // dalla slide con indice activeImage rimuovo la classe active
+        slides[activeImage].classList.remove("active");
+
+        // alla slide con indice activeImage aggiungo la classe active
+        slides[1].classList.add("active");
+    }
+)
+
+
+mini_3.addEventListener(
+    "click",
+    function () {
+        // recupero tutte le slides (come oggetti)
+        const slides = document.querySelectorAll(".item");
+
+        // dalla slide con indice activeImage rimuovo la classe active
+        slides[activeImage].classList.remove("active");
+
+        // alla slide con indice activeImage aggiungo la classe active
+        slides[2].classList.add("active");
+    }
+)
+
+
+mini_4.addEventListener(
+    "click",
+    function () {
+        // recupero tutte le slides (come oggetti)
+        const slides = document.querySelectorAll(".item");
+
+        // dalla slide con indice activeImage rimuovo la classe active
+        slides[activeImage].classList.remove("active");
+
+        // alla slide con indice activeImage aggiungo la classe active
+        slides[3].classList.add("active");
+    }
+)
+
+
+mini_5.addEventListener(
+    "click",
+    function () {
+        // recupero tutte le slides (come oggetti)
+        const slides = document.querySelectorAll(".item");
+
+        // dalla slide con indice activeImage rimuovo la classe active
+        slides[activeImage].classList.remove("active");
+
+        // alla slide con indice activeImage aggiungo la classe active
+        slides[4].classList.add("active");
     }
 )
